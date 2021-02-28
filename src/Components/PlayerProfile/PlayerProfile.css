@@ -1,0 +1,18 @@
+img{
+    height: 300px;
+    width: 350px;
+    border-radius: 15px;
+}
+.PlayerContainer{
+    width: 60%;
+    display: flex;
+    line-height: 300px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px tomato;
+    margin-top: 20px;
+    /* width: 800px; */
+    margin-left: 20px;
+}
+.leftMargin{
+    margin-left: 100px;
+}
