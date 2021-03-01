@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTshirt } from '@fortawesome/free-solid-svg-icons';
 import './PlayerProfile.css';
-import Club from './Club/Club';
 
 const PlayerProfile = (props) => {
     const { image, first_name, last_name, salary } = props.player;

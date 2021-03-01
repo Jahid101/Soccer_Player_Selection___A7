@@ -4,6 +4,7 @@ import PlayerProfile from './Components/PlayerProfile/PlayerProfile';
 import React, { useEffect, useState } from 'react';
 import playerInfo from '../src/data/playerInfo.json';
 import Club from './Components/PlayerProfile/Club/Club';
+import './Components/PlayerProfile/Club/Club.css';
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -19,16 +20,16 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="body">
       <h1 className="d-flex justify-content-center">Select Players for your Club</h1>
 
-      <div className="">
+      <div className="playerContainer">
         <div>
           {
             players.map(plr => <PlayerProfile handleAddPlr={handleAddPlr} player={plr}></PlayerProfile>)
           }
         </div>
-        <div>
+        <div className="clubInfo">
           {
             <Club club={club}></Club>
           }
@@ -37,6 +38,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

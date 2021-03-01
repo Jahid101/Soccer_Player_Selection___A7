@@ -1,21 +1,25 @@
 import React from 'react';
-import PlayerProfile from '../PlayerProfile';
-import "./Club.css"
 
 const Club = (props) => {
     const club = props.club;
     // console.log(props.club);
     let total = 0;
+    let salary = 0;
+    let playerName = [];
     for (let i = 0; i < club.length; i++) {
         const player = club[i];
         // console.log(player.salary);
-        total = total + player.salary;
+        salary = player.salary;
+        let Name = ' '+player.first_name + ' ' + player.last_name + '($'+ salary + ')' + '. ';
+        playerName.push(Name);
+        total = total + salary;
     }
 
     return (
         <div>
             <h3>Total Player added : {club.length}</h3>
-            <h4>Total Amount : {total}</h4>
+            <h5>Selected Player : <small>{playerName}</small></h5>
+            <h4>Total Budget : ${total}</h4>
         </div>
     );
 };

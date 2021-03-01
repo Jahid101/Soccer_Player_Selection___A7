@@ -1,17 +1,21 @@
 img{
     height: 300px;
     width: 350px;
-    border-radius: 15px;
+    padding-top: 25px;
+    padding-left: 25px;
+
 }
 .PlayerContainer{
-    width: 60%;
+    width: 800px;
     display: flex;
     line-height: 300px;
     border-radius: 15px;
     box-shadow: 10px 10px 40px tomato;
     margin-top: 20px;
-    /* width: 800px; */
     margin-left: 20px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding : 25px;
 }
 .leftMargin{
     margin-left: 100px;
