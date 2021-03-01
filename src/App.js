@@ -3,8 +3,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PlayerProfile from './Components/PlayerProfile/PlayerProfile';
 import React, { useEffect, useState } from 'react';
 import playerInfo from '../src/data/playerInfo.json';
-import Club from './Components/PlayerProfile/Club/Club';
-import './Components/PlayerProfile/Club/Club.css';
+import Club from '../src/Components/Club/Club';
+import '../src/Components/Club/Club.css';
 
 function App() {
   const [players, setPlayers] = useState([]);
